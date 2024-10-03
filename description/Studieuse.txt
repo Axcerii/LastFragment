@@ -1,0 +1,1 @@
+Lors d'un entraînement d'une statistique hors-combat, jette un dé de 6. Si cela tombe sur 6, double les gains.

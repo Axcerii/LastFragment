@@ -1,0 +1,1 @@
+Pouette permettant la communication avec la nation où elle a été achetée.

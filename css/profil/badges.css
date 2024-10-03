@@ -1,0 +1,151 @@
+.badges{
+    flex-direction: column;
+    margin: auto 5.00001%;
+    width: 90%;
+    display: flex;
+    border: 2px solid var(--mypurple);
+    background: rgba(0,0,0,0.3);
+}
+
+.row-1-badges{
+    display: flex;
+    flex-direction: row;
+    margin: auto auto;
+}
+
+.img-badge{
+    width: 100%;
+    margin: auto auto;
+    cursor: help;
+}
+
+.img-badge-2{
+    width: 85%;
+    margin: auto auto;
+    cursor: help;
+}
+
+.aide{
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.bulle-help{
+    position: relative;
+    display: flex;
+    margin: auto auto;
+
+}
+
+.bulle-help:hover .aide{
+    display: block;
+}
+
+.Utilisé{
+    opacity: 0.7;
+    filter: brightness(0.5);
+}
+
+.table70{
+    display: none;
+}
+
+.fieldset-badges{
+    display: flex;
+    margin: auto auto;
+    flex-direction: row;
+    width: 90%;
+}
+
+.fieldset-badges label{
+    position: relative;
+    border: 3px solid var(--mypurple);
+    padding: 1em;
+
+    text-align: center;
+    cursor: pointer;
+
+    transition: all 400ms;
+    border-bottom: none;
+}
+
+.fieldset-badges label:hover{
+    border-color: var(--mywhite);
+}
+
+.fieldset-badges input{
+    appearance: none; /* Supprime l'apparence par défaut */
+    -webkit-appearance: none; /* Pour certains navigateurs WebKit (comme Chrome) */
+    -moz-appearance: none; /* Pour certains navigateurs Mozilla (comme Firefox) */
+}
+
+.green-screen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 200ms ease-in-out;
+    background: var(--mypurple);
+
+    opacity: 0;
+    z-index: -1;
+}
+
+.fieldset-badges label:hover > .green-screen{
+    opacity: 0.5;
+}
+
+.fieldset-badges input:checked ~ .green-screen{
+    opacity: 1;
+}
+
+.badge-competences{
+    width: 100%;
+}
+
+.comp-img{
+    display: flex;
+    width: 75%;
+}
+
+.badge-img-comp{
+    width: 100%;
+}
+
+.comp-img > .bulle-help{
+    width: 100%;
+}
+
+.badge-td-description{
+    width: 60%;
+    text-align: justify;
+}
+
+.badge-td-description > p{
+    padding: 2em 2em 2em 0px;
+}
+
+.badge-competences tbody tr td{
+    padding: 0;
+}
+
+.comp-unlocked{
+    text-align: center;
+    padding: 2em;
+}
+
+@media screen and (max-width: 500px) {
+
+    .fieldset-badges label{
+        padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+}
+

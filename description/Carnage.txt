@@ -1,0 +1,1 @@
+Après 5 tours de combat, toutes les statistiques de combat augmente de 10%. (Sauf QdF, Endurance et PV)

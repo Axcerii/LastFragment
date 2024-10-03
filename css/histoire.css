@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    padding: 0% 10%;
+}
+
+.colonne{
+    color: var(--mywhite);
+    font-family: var(--TitleFont);
+    font-size: 3.5em;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    overflow-y: scroll;
+    height: 70vh;
+
+    transition: all 500ms ease;
+}
+
+
+.colonne::-webkit-scrollbar{
+    width: 0.2em;
+    }
+
+.categorie{
+    margin-bottom: 1em;
+    opacity: 0.5;
+    transition: all 500ms ease;
+}
+
+.categorie:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.categorie > a{
+    color: floralwhite;
+    text-decoration: none;
+}
+
+.categorie::marker{
+    content: none;
+}
+
+
+/* ID */
+
+
+#preview{
+    width: 60%;
+    height: 75vh;
+
+    margin-left: 2em;
+    border: solid var(--mypurple) 4px;
+    overflow-y: hidden;
+}
+
+#lieux{
+    display: none;
+}
+
+#legendes{
+    display: none;
+}
+
+#races{
+    display: none;
+}
+
+#dragons{
+    display: none;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    #preview{
+        display: none;
+    }
+
+    body{
+        padding : 0px;
+    }
+
+    .colonne{
+        margin-top: 25%;
+        font-size: 1.5em;
+    }
+}

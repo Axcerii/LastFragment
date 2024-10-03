@@ -1,0 +1,139 @@
+.newInventaire{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    margin: auto;
+}
+
+.newInventaire-Objet{
+    position: relative;
+    border: solid var(--mypurple) 2px;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.Objet-PopUpWindow{
+    position: absolute;
+    width: 100%;
+    left: 65%;
+    top: -70%;
+    display: none;
+    background: rgba(0,0,0,0.8);
+    border-radius: 1em;
+    padding: 1em;
+    z-index: 10;
+}
+
+.Objet-Image{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+}
+
+.icone-type{
+    width: 80%;
+    margin: auto;
+    margin-top: 5em;
+    padding: 0.8em;
+}
+
+.Objet-Image:hover{
+    cursor: help;
+}
+
+.newInventaire-Objet:hover .Objet-PopUpWindow{
+    display: block;
+}
+
+.Objet-PopUpWindow > p{
+    text-align: center;
+}
+
+
+.rareté-1{
+    color: gray;
+}
+
+.rareté-2{
+    color: green;
+}
+
+.rareté-3{
+    color:dodgerblue;
+}
+
+.rareté-4{
+    color:orangered;
+}
+
+.rareté-5{
+    color:red;
+}
+
+.fieldset-inventaire{
+    width: 100%!important;
+    margin-top: 2em!important;
+}
+
+.Coffre{
+    margin-bottom: 5em;
+}
+
+.objet-nom-image{
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+
+    background: rgba(0,0,0,0.8);
+}
+
+.container-indicateur-poids{
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    bottom: 5%;
+    right: 5%;
+}
+
+.indicateur-poids{
+    width: 20%;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(3deg) brightness(108%) contrast(101%);
+}
+
+.couleur-équipée{
+    filter: invert(96%) sepia(87%) saturate(870%) hue-rotate(45deg) brightness(120%) contrast(101%);
+}
+
+@media screen and (max-width: 500px) {
+    .newInventaire{
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+    }
+
+    .Objet-PopUpWindow{
+        left: 50%;
+        top: 75%;
+
+        padding: 0.5em;
+        width: 100%;
+
+        transform: translate(-50%, -50%);
+
+    }
+
+    .equip{
+        width: 95%;
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    .fieldset-inventaire{
+        width: 95%!important;
+    }
+}

@@ -1,0 +1,181 @@
+:root{
+    --mypurple : floralwhite!important;
+    --personnal: #353535;
+    --personnal2: #bfbfbf;
+    --TitleFont: "Bebas Neue"!important;
+    --mywhite : floralwhite!important;
+    --altcolor: #afafaf;
+    --darkaltcolor: #817f7f;
+}
+
+/* h1{
+    font-size: 2.75em!important;
+}
+
+.titre_stat{
+    font-size: 1.5em!important;
+}
+
+.titre_stat1{
+    font-size: 1.5em!important;
+} */
+
+.background-pattern{
+  display: none;
+}
+
+.background-pattern-radial{
+  display: none;
+}
+
+
+html{
+    overflow: hidden;
+    font-size: 18px;
+    background-color: black!important;
+    cursor: none!important;
+}
+
+.fiche{
+    height: 75vh;
+}
+
+.personnage_img{
+    border: none;
+    width: 30vw;
+    height: 30vw;
+}
+
+.background_pattern{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    z-index: -100;
+    top: 0px;
+    left: 0px;
+
+    opacity: 0.3;
+
+    background:
+      conic-gradient(at 50% calc(100%/6),#a2a2a2 60deg,#0000 0),
+      conic-gradient(at calc(100%/6) 50%,#0000 240deg,#a2a2a2 0),
+      conic-gradient(from 180deg at calc(100%/6) calc(500%/6),#a2a2a2 60deg,#0000 0),
+      conic-gradient(from 180deg at calc(500%/6),#0000 240deg,#a2a2a2 0) calc(4*.866*15px) 0,
+      repeating-linear-gradient(-150deg,#919191 0 calc(100%/6),#0000   0 50%),
+      repeating-linear-gradient(-30deg, #383737 0 calc(100%/6),#4a4a4a 0 50%);
+    background-size: calc(6*.866*15px) calc(3*15px);   
+}
+
+.header{
+    background-image: url('../../Image/Background/Toki.jpg')!important;
+    background-size: cover;
+    background-position-y: 700px;
+    color: floralwhite !important;
+}
+
+h1{
+    font-size: 2em;
+}
+
+caption{
+    font-size: 1.7em;
+}
+
+.logo{
+    color: floralwhite !important;
+}
+
+.header-right > a{
+    color: floralwhite !important;
+    opacity: 100% !important; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: solid 2px var(--personnal);
+  }
+
+::-webkit-scrollbar-thumb {
+    background: floralwhite!important;
+    border-radius: 5px;
+  }
+
+
+::-webkit-scrollbar-track {
+    background: none!important;
+    }
+
+.personnage_img{
+    border-color: var(--mywhite)!important;
+}
+
+/* .valeur_stat{
+    opacity: 0;
+  }
+
+  .new-barre{
+    opacity: 0;
+  } */
+
+
+  .trainee {
+    position: absolute;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: floralwhite;
+    opacity: 1;
+    pointer-events: none;
+    filter: blur(1px);
+  }
+
+  .trail {
+    position: absolute;
+    z-index: 9998;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(0, 203, 98);
+    opacity: 0.2;
+    pointer-events: none;
+    filter: blur(5px);
+  }
+
+  .barre-statistique-background{
+    border-radius: 2px;
+  }
+
+  .new-barre{
+    border-radius: 2px;
+  }
+
+  .equip{
+    background: #4a4a4a;
+  }
+  .equip:hover{
+    background: #383737;
+  }
+
+  .toggle-switch input[type="checkbox"]:checked + .toggle-slider {
+    background-color: var(--smoothflux);
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .money{
+        top: auto;
+        bottom: 0.5em;
+
+        padding: 0.5em;
+    }
+
+    .trainee{
+        display: none;
+    }
+
+    .trail{
+        display: none;
+    }
+
+  }

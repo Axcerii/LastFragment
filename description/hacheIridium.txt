@@ -1,0 +1,1 @@
+Augmente la force de 10 lors d'une attaque utilisant cette arme. En supplément les jets de défense augmente de 5.

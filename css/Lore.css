@@ -1,0 +1,47 @@
+h2{
+    font-family: var(--TitleFont);
+    color: var(--mywhite);
+    margin-left: 10%;
+}
+
+h3{
+    font-family: var(--TitleFont);
+    color: var(--mywhite);
+    margin-left: 6%;
+}
+
+li{
+    color: var(--mywhite);
+    font-size: 1em;
+}   
+
+a{
+    color: var(--mywhite);
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    
+    width: 40%;
+    margin: auto auto;
+}
+p{
+    color: var(--mywhite);
+    text-align: justify;
+    font-size: 1.2em;
+    text-indent: 3em
+}
+
+.preview{
+    width: 90%!important;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .body{
+        width: 90%;
+    }
+
+}

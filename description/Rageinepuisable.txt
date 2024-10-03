@@ -1,0 +1,1 @@
+Lorsque l'utilisateur prend une attaque mortelle, il reste debout jusqu'à son prochain tour, dès lors, la moindre bourrasque l'achève.

@@ -1,0 +1,135 @@
+Maha :
+
+Sacoche :
+
+
+Arbalète en acier royale et en bois. (2 mains)
+ 
+Utilise la précision de Maha pour lancer un carot sur l'adversaire, l'arme inflige un dés de 20*10 (ignore la défense).
+
+
+Guindao en ébonite renforcé à l'émeraude (2 mains)
+
+Attaque +18, Précision -5, Vitesse -5.
+
+
+Armure en os d'Irysia (Armure)
+
+Defense + 20, Vitesse -5
+
+
+Vêtement Chaud de Mudan Nord (Vêtement)
+
+Résistance aux froids accrus.
+
+
+
+Coffre :
+
+Marteau de Guerre Ébonite, Mythril et Acier (2 mains)
+
+Attaque +2, Vitesse -10, Précision -10
+
+
+Tenue d'Apparat (Vêtement)
+
+Charisme + 15, Vitesse -25 et Précision -25 (La tenue se détruit si un combat à lieu)
+
+
+Armure en Peau (Armure)
+
+Defense +5, Vitesse +5
+
+
+Couteau en Acier Royal (jet)
+
+Dés de 20*5. 
+
+
+Cape de Camouflage (Mauvaise état)
+
+Cache l'identité, Furtivité +3;
+
+
+
+Notaine : 
+
+Sacoche :
+
+Armure en ébonite (Armure)
+
+Défense +25 Vitesse -10
+
+
+Bribe de Yinva (1 main)
+
+bribe.txt
+
+
+épée courte en fer (1 main)
+
+Attaque +2
+
+
+Gant de combat en ébonite (1 main)
+
+Attaque +10, Vitesse et Précision -3
+
+
+Gant de Combat en Orichalque (1 main)
+
+Attaque +4, Maitrise +6
+
+
+
+
+Coffre :
+
+Armure en os d'Irysia (Armure)
+
+Defense + 20, Vitesse -5
+
+
+Cape de Camouflage (Mauvaise état)
+
+Cache l'identité, Furtivité +3;
+
+
+
+Tenue d'Apparat (Vêtement)
+
+Charisme + 15, Vitesse -25 et Précision -25 (La tenue se détruit si un combat à lieu)
+
+
+
+Mortus :
+
+Sacoche :
+
+Marteau en Orichalque (1 main)
+
+Attaque +4, Maîtrise +6
+
+
+Engin en Fluxtite et Orichalque
+
+Inflige des dégats de maitrise si le jet de précision est réussi. Retour de dégat un ou deux jets de 4*1,5
+
+
+Armure en Mythril avec bottes en orichalque (Armure)
+
+Défense +8, Vitesse +5
+
+
+Wakizashi (1 main)
+
+Attaque +10, Vitesse et Précision +5
+
+
+Coffre : 
+
+Cape de Camouflage (Mauvaise état)
+
+Cache l'identité, Furtivité +3;
+
+

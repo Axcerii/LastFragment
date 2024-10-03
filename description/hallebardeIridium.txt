@@ -1,0 +1,1 @@
+Augmente la force de 20 lors d'une attaque utilisant cette arme. En supplément les jets de défense augmente de 5. Vous ne pouvez pas esquiver avec cette arme.

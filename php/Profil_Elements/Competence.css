@@ -1,0 +1,260 @@
+:root{
+    --comp_bar_height: 3vw;
+}
+
+.comp-solo-bar{
+    height: var(--comp_bar_height);
+    background-color: var(--mypurple);
+    margin-left: 0.8vw;
+    position: relative;
+    border-radius: 5em;
+}
+
+
+.comp-button-row{
+    display: flex;
+    flex-direction: row;
+    margin: auto auto;
+}
+
+.comp-button-row > form{
+    width: 20%;
+}
+
+.comp-button-row > *:not(:last-child){
+    border-right: 2px solid var(--mypurple);
+}
+
+.comp-button{
+    background: transparent;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--mywhite);
+    padding: 1.5em;
+    width: 100%;
+    border: none;
+    transition: background-color 0.5s ease-out, transform 0.2s ease-out;
+}
+
+
+
+.comp-button:hover{
+    background-color: var(--mypurpledark);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.comp-parallelogramme {
+    width: 8vw;
+    height: var(--comp_bar_height);
+    background-color: var(--mypurple);
+    margin-left: 0.8vw;
+    position: relative;
+  }
+
+.comp-bar{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: auto auto;
+}
+
+
+.comp-first{
+    margin-right: 0.8vw;
+    border-radius: 5em 0 0 5em;
+}
+
+.comp-middle{
+    transform: skew(-20deg);
+}
+
+.comp-last{
+    margin-left: 1.6vw;
+    border-radius: 0 5em 5em 0;
+}
+
+.comp-unlocked-first::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 3vw;
+    right: -1.33vw;
+    transform-origin: top right;
+    transform: skew(-20deg);
+    background-color: var(--mypurple);
+}
+
+.comp-unlocked-last::before{
+    content: "";
+    position: absolute;
+    top:0;
+    bottom: 0px;
+    left: -1.33vw;
+    right: 3vw;
+    transform-origin: bottom left;
+    transform: skew(-20deg);
+    background-color: var(--mypurple);
+}
+
+.comp-locked{
+    background-color: var(--mypurpledark);
+    box-sizing: border-box;
+}
+
+.comp-locked-first::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 3vw;
+    right: -1.33vw;
+    transform-origin: top right;
+    transform: skew(-20deg);
+    background-color: var(--mypurpledark);
+}
+
+.comp-locked-last::before{
+    content: "";
+    position: absolute;
+    top:0;
+    bottom: 0px;
+    left: -1.33vw;
+    right: 3vw;
+    transform-origin: bottom left;
+    transform: skew(-20deg);
+    background-color: var(--mypurpledark);
+}
+
+.comp-description{
+    display: flex;
+    width: 40%;
+    margin:auto;
+    color: var(--mywhite);
+    flex-direction: column;
+    margin-top: 2em;  
+}
+
+.comp-description > h2{
+    font-family: var(--TitleFont);
+    font-size: 2em;
+    text-align: center;
+}
+
+.comp-description > p{
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 2em; 
+}
+
+.comp-locked-description{
+    background: 
+    linear-gradient(90deg, var(--mypurple) 50%, transparent 0) repeat-x,
+    linear-gradient(90deg, var(--mypurple) 50%, transparent 0) repeat-x,
+    linear-gradient(0deg, var(--mypurple) 50%, transparent 0) repeat-y,
+    linear-gradient(0deg, var(--mypurple) 50%, transparent 0) repeat-y;
+
+    --a: 16px;
+    ---a: -16px;
+    --b: 4px;
+
+    background-size: var(--a) var(--b), var(--a) var(--b), var(--b) var(--a), var(--b) var(--a);
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    animation: linearGradientMove .6s infinite linear;
+}
+
+.comp-unlocked-description{
+    border: 4px solid var(--mypurple);
+}
+
+.comp-parallelogramme:hover{
+    cursor: help;
+    opacity: 0.8;
+}
+
+.comp-solo-bar:hover{
+    cursor: help;
+    opacity: 0.8;
+}
+
+.comp-mobile-button{
+    display: none;
+}
+
+@keyframes linearGradientMove {
+    100% {
+        background-position: var(--a) 0, var(---a) 100%, 0 var(---a), 100% var(--a);   
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :root{
+        --comp_bar_height: 8vw;
+    }
+
+    .comp-description{ 
+        width: 90%;
+    }
+
+    .comp-bar{
+        width: 90%;
+    }
+
+    .comp-solo-bar{
+        width: 90%;
+    }
+
+    .comp-locked-last::before{
+        display: none;
+    }
+
+    .comp-unlocked-last::before{
+        display: none;
+    }
+
+    .comp-locked-first::before{
+        display: none;
+    }
+
+    .comp-unlocked-first::before{
+        display: none;
+    }
+
+    .comp-first{
+        border-radius: none;
+    }
+
+    .comp-last{
+        border-radius: none;
+    }
+
+    .comp-middle{
+        transform: skew(0deg);
+    }
+
+    .comp-mobile-button{
+        display: block;
+    }
+
+    .comp-pc-button{
+        display: none;
+    }
+
+    .comp-button-row{
+        width: 90%!important;
+    }
+
+    .comp-button{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+
+    .comp-description > h2{
+        font-size: 1.5em;
+    }
+
+    .comp-description > p{
+        font-size: 1em;
+    }
+}

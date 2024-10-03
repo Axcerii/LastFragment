@@ -1,0 +1,1 @@
+Augmente la force de 5 lors d'une attaque utilisant cette arme. De plus lors d'un jet de vitesse, la vitesse augmente 5. En supplément, les jets d'ACC augmente de 5.

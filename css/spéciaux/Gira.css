@@ -1,0 +1,187 @@
+:root{
+    --mypurple : rgb(232, 232, 232)!important;
+    --TitleFont: "UnifrakturMaguntia"!important;
+    --smoothflux: #9b0101!important;
+    --altcolor: #BC8DCB;
+    --darkaltcolor: #BC8DCB;
+}
+
+html{
+/*     background: linear-gradient(#9b1006, #261226)!important; */
+  background-color:black!important ;
+  cursor: none;
+  overflow : hidden;
+  background-image: url('../../Image/Background/Preview.jpg')!important;
+  background-size: 100%;
+}
+
+.background-pattern{
+  display: none;
+}
+
+.background-pattern-radial{
+  display: none;
+}
+
+
+a:hover{
+    cursor: none;
+}
+
+.background_pattern{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -100;
+
+    background-color: transparent;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+.header{
+    background-image: url('../../Image/Background/bannerGira.jpg')!important;
+    background-position: 10%;
+    background-size: cover;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: solid 2px #ff66ad;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #5e1818!important;
+    border-radius: 5px;
+  }
+
+
+::-webkit-scrollbar-track {
+    background: none!important;
+    }
+
+    .personnage_img{
+        border: none!important;
+    }
+
+    .titre_stat{
+        font-family: 'Rubik';
+    }
+    .titre_stat1{
+        font-family: 'Rubik';
+    }
+    .Link{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: Bold;
+    }
+
+    caption{
+        font-size: 2em;
+    }
+
+    td{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .fiche{
+        height: 76.6vh;
+        overflow: auto;
+    }
+
+    .trainee {
+        position: absolute;
+        z-index: 9999;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: floralwhite;
+        opacity: 1;
+        pointer-events: none;
+        filter: blur(10px);
+      }
+
+      .trail {
+        position: absolute;
+        z-index: 9999;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: floralwhite;
+        opacity: 0.2;
+        pointer-events: none;
+        filter: blur(10px);
+      }
+
+/*       .valeur_stat{
+        opacity: 0;
+      }
+
+      .new-barre{
+        opacity: 0;
+      } */
+
+      .argents-emplacements{
+        display: flex;
+        flex-direction: column;
+
+
+        position: fixed;
+        top: 20%;
+        left: 1em;
+        width: 10%;
+
+        border: rgba(255,255,255, 0.6) 2px solid;
+
+        padding: 1em;
+        border-radius: 10px;
+
+        font-size: 1.5em;
+      }
+
+      .equip{
+        background: #972727; 
+      }
+      .equip:hover{
+        background: #5e1818;
+      }
+
+      .toggle-switch input[type="checkbox"]:checked + .toggle-slider {
+        background-color: #972727;
+      }
+
+      .money{
+        text-align: left!important;
+        width: 100%;
+      }
+
+      .personnage_img{
+        border-radius: 100%;
+      }
+      
+      @media screen and (max-width: 500px) {
+
+        .argents-emplacements{
+            top: auto;
+            bottom: 0.5em;
+            left: 40%;
+            width: 50%;
+            padding: 0.5em;
+            height: 8%;
+
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .trainee{
+            display: none;
+        }
+
+        .trail{
+            display: none;
+        }
+
+      }

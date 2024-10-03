@@ -1,0 +1,162 @@
+:root{
+    --mypurple : rgb(102, 197, 209)!important;
+    --personnal: #353535;
+    --personnal2: #bfbfbf;
+    --TitleFont: "Orbitron"!important;
+    --altcolor: #ec794f;
+    --darkaltcolor: #b05c3e;
+/*     --mywhite : #691201!important; */
+}
+
+/* h1{
+    font-size: 2.75em!important;
+}
+
+.titre_stat{
+    font-size: 1.5em!important;
+}
+
+.titre_stat1{
+    font-size: 1.5em!important;
+} */
+
+html{
+background-color: #02e3ff;
+cursor: none;
+overflow: hidden;
+}
+
+.background-pattern{
+  display: none;
+}
+
+.background-pattern-radial{
+  display: none;
+}
+
+.header{
+    background-image: url('../../Image/Background/Zayath\ Monster.jpg')!important;
+    background-size: cover;
+    background-position-y: -50px;
+    color: floralwhite !important;
+}
+
+.logo{
+    color: floralwhite !important;
+}
+
+.header-right > a{
+    color: floralwhite !important;
+    opacity: 100% !important; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: solid 2px var(--personnal);
+  }
+
+::-webkit-scrollbar-thumb {
+    background: var(--mypurple)!important;
+    border-radius: 5px;
+    opacity: 0.2;
+  }
+
+
+::-webkit-scrollbar-track {
+    background: none!important;
+    }
+
+/* .s-base > table{
+
+}
+
+.s-base{
+
+}
+
+.s-combat > table{
+
+}
+
+.s-combat{
+
+} */
+
+.personnage_img{
+    border: none;
+    width: 20vw;
+    height: 20vw;
+}
+
+
+/* Trail */
+
+.trainee {
+    position: absolute;
+    z-index: 9999;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--mypurple);
+    opacity: 0.6;
+    pointer-events: none;
+    filter: blur(5px);
+  }
+
+  
+  .circle{
+    position: absolute;
+    z-index: -90;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: var(--myblack);
+    opacity: 1;
+    pointer-events: none;
+    filter: blur(100px);
+    transform: translate(-50%, -50%);
+  }
+
+
+  .trail {
+    position: absolute;
+    z-index: 9999;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #02e3ff;
+    opacity: 0.2;
+    pointer-events: none;
+    filter: blur(10px);
+  }
+
+  .equip{
+    background: #1a1a1a;
+  }
+  .equip:hover{
+    background: #131313;
+  }
+
+
+/* Background pattern */
+
+.background_pattern{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+
+    z-index: -100;
+
+    background:
+        linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+        linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+        background-color: #131313;
+        background-size: 20px 20px;
+
+    opacity: 0.98
+}

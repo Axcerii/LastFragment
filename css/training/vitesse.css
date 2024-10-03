@@ -1,0 +1,18 @@
+.Zone{
+    display: flex;
+
+    margin: auto auto;
+
+    width: 50vw;
+    height: 50vh;
+    border: var(--mypurple) solid 4px;
+    border-radius: 4px;
+
+    background: none;
+}
+
+p{
+    color: var(--mywhite);
+    margin-left: 25vw;
+    font-size: 2em;
+}

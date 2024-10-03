@@ -1,0 +1,285 @@
+tr{
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: var(--mywhite);
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+
+.page{
+    display: flex;
+    width: 100%;
+}
+
+.colonne_gauche{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.colonne_droite{
+    display: flex;
+    width: 40%;
+}
+
+.stats{
+    width: 100%;
+    display: flex;
+    margin: auto auto auto 10%;
+}
+
+.label_combat{
+    width: 20%;
+    border: var(--mywhite) solid 3px;
+    border-radius: 1em;
+    padding: 2em;
+}
+
+.label_combat_text{
+    color: var(--mywhite);
+    font-weight: normal;
+}
+
+.stats_combat{
+    width: 8%;
+    background: transparent;
+    padding: 2em;
+}
+
+.stats_bars{
+    width: 60%;
+    padding: 2em;
+}
+
+.stat_separe{
+    color: var(--mywhite);
+    background: transparent;
+}
+
+.bar{
+    background: var(--mypurple);
+    border-radius: 2em;
+    height: 1em;
+    padding-top: 3px;
+
+    transition: 400ms all;
+}
+
+#blackscreen{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    top: 0;
+    left: 0;
+
+    z-index: 9998;
+}
+
+.citation{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+
+    z-index: 9999;
+}
+
+#citation-p{
+    color: var(--mywhite);
+    font-size: 0em;
+    font-family: 'Yusei Magic';
+    width: 100%;
+    opacity: 0;
+    
+    text-align: center;
+    margin: auto auto auto auto;
+}
+
+.trivia{
+    font-family: 'Yusei Magic';
+    width: 30%;
+    border: var(--mywhite) solid 3px;
+    border-radius: 1em;
+    padding: 2em;
+    opacity: 0;
+
+    transition: ease-in-out all 2000ms;
+    margin: 1em auto 2em 10%;
+}
+
+.descendance{
+    text-align: center;
+    font-size: 1.5em;
+    opacity: 0;
+    transition: ease-in-out all 2000ms;
+}
+
+.dragon{
+    opacity: 0;
+    transition: ease-in-out all 2000ms;
+}
+
+.prenoms_possibles{
+    text-decoration: underline;
+    opacity: 0;
+    transition: ease-in-out all 1000ms;
+}
+
+.names{
+    color: var(--mywhite);
+    min-height: 5em;
+}
+
+.certificate{
+    position: relative;
+    font-family: 'Yusei Magic';
+    width: 70%;
+    border: var(--mywhite) solid 3px;
+    border-radius: 1em;
+    padding: 4em;
+}
+
+.flux{
+    font-size: 3em;
+    text-align: center;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+}
+
+.flux_description{
+    font-size: 1.5em;
+    text-align: justify;
+    visibility: hidden;
+}
+
+.flux_logo_certificate{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    display: none;
+}
+
+.logo_front{
+    opacity: 1;
+    left: 5%;
+    width: 90%;
+}
+
+.ligne_1{
+    display: flex;
+}
+
+.potentiel{
+    position: relative;
+    font-family: 'Yusei Magic';
+    width: 30%;
+    border: var(--mywhite) solid 3px;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 1em 8% 2em 5em;
+
+    opacity: 0;
+    transition: ease-in-out 2000ms all;
+}
+
+.pentagone{
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    left: 17.5%;
+    top: 17.5%;
+    z-index: 1;
+
+    display: none;
+}
+
+.potentiel_background{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 8%;
+    object-fit: contain;
+    z-index: 0;
+    opacity: 0;
+    
+    transition: ease-in-out 2000ms all;
+}
+
+header{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+
+    .colonne_droite{
+        width: 100%;
+    }
+
+    .colonne_gauche{
+        width: 100%;
+    }
+
+    .ligne_1{
+        flex-direction: column;
+    }
+
+    .page{
+        flex-direction: column;
+    }
+
+    .trivia{
+        width: 90%;
+        margin: 1em 0;
+        padding-right: 0;
+    }
+
+    .potentiel{
+        width: 90%;
+        margin: 1em 0;
+        padding-right: 0;
+        min-height: 20em;
+    }
+
+    .stats{
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .certificate{
+        width: 100%;
+        padding: 2em;
+        margin-left: 0;
+    }
+
+    .flux{
+        font-size: 2.5em;
+        padding: 0.5em;
+    }
+
+    .descendance{
+        text-align: left;
+    }
+
+    .stats_bars{
+        width: 100%;
+    }
+
+    #citation-p{
+        font-size: 1em;
+    }
+}

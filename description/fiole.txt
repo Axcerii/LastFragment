@@ -1,0 +1,1 @@
+Fiole contenant un flux à utiliser.

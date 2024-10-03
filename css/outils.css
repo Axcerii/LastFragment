@@ -1,0 +1,299 @@
+button{
+    width: 10%;
+    margin-left: 5%;
+    height: 2em;
+    color: var(--mywhite);
+    background: none;
+    font-size: 1em;
+    border: solid 2px var(--mywhite);
+    cursor: pointer;
+    border-radius: 0.5em;
+    transition: 400ms;
+}
+
+button:hover{
+    background-color: var(--mypurple);
+    padding-bottom: 3px;
+    box-shadow: 0px 0.5em 15px black;
+}
+
+.LesBoutons{
+    display: flex;
+    width: 80%;
+    margin: auto auto;
+    margin-top: 2em;
+}
+
+tr{
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: var(--mywhite);
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stats{
+    width: 80%;
+    display: flex;
+    margin: auto auto;
+    margin-top: 2em;
+}
+
+.label_combat{
+    width: 20%;
+    border: var(--mywhite) solid 3px;
+    border-radius: 1em;
+    padding: 2em;
+}
+
+.label_combat_text{
+    color: var(--mywhite);
+    font-weight: normal;
+}
+
+.stats_combat{
+    width: 8%;
+    background: transparent;
+    padding: 2em;
+}
+
+.stats_bars{
+    width: 40%;
+    padding: 2em;
+}
+
+.stat_separe{
+    color: var(--mywhite);
+    background: transparent;
+}
+
+.link_outils{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 21vw;
+    margin: auto auto;
+    font-style: none;
+    padding: 1em;
+    border-radius: 1em;
+
+    transition: all 800ms ease;
+}
+
+.link_outils > img{
+    width: 20vw;
+    display: flex;
+    margin-left: auto; 
+    filter: invert(48%) sepia(63%) saturate(378%) hue-rotate(5deg) brightness(93%) contrast(90%);
+    opacity: 1;
+}
+
+.link_outils > p{
+    width: 60%;
+    font-family: var(--TitleFont);
+    font-size: 5vw;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.link_outils:link{
+    text-decoration: none;
+}
+.link_outils:visited{
+    text-decoration: none;
+}
+.link_outils:active{
+    text-decoration: none;
+}
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse !important;
+}
+
+.reverse > img{
+    margin-right: auto;
+}
+
+.reverse > p{
+    text-align: end;
+}
+
+.link_outils:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+
+.inputs{
+    display: flex;
+    margin: auto auto;
+}
+
+.pgm{
+    width: 25%;
+}
+
+.input-min-max > div > label{
+    color: white;
+    font-family: var(--TitleFont);
+    width: 40%;
+    margin: auto auto;
+}
+
+.input-min-max > div > input{
+    width: 35%;
+    margin: auto auto;
+}
+
+.input-min-max{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+}
+
+.input-min-max > div{
+    width: 100%;
+    display: flex;
+    flex: row;
+    margin-bottom: 2em;
+}
+
+.puissance_totale{
+    margin-left: 10%;
+}
+
+.explications{
+    display: flex;
+    margin: auto auto;
+    text-align: justify;
+    font-weight: normal;
+    margin-bottom: 2em;
+    width: 50%;
+}
+
+
+.bar{
+    background: var(--mypurple);
+    border-radius: 2em;
+    height: 1em;
+    padding-top: 3px;
+
+    transition: 400ms all;
+}
+
+.input-stat{
+    border: none;
+    color: var(--mypurple);
+    background: transparent;
+    font-weight: bold;
+    font-family: var(--TitleFont);
+    display: none;
+}
+
+.input-stat-p{
+    border: none;
+    color: var(--mypurple);
+    background: transparent;
+    font-weight: bold;
+    font-family: var(--TitleFont);
+}
+
+.label-checkbox{
+    color: var(--mywhite);
+    font-family: var(--TitleFont);
+}
+
+.div-checkbox{
+    display: flex;
+    width: 20%;
+    margin-left: 20%;
+}
+
+#statsCheckbox{
+    text-align: right;
+}
+
+.random_name{
+    border: var(--mypurple) 2px solid;
+    padding: 2em;
+    border-radius: 2em;
+    width: 30%;
+    margin-top: 2em;
+    margin-left: 10%;
+}
+
+.random_name > div{
+    display: flex;
+}
+
+.random_name > div > div{
+    width: 100%;
+}
+
+.random_name > button{
+    width: 40%;
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .LesBoutons{
+        width: 100%;
+    }
+
+    button{
+        width: 20%;
+        margin: 2.5% auto;
+    }
+
+    .link_outils{
+        height: 41vw;
+        border-bottom: 0.5em var(--mypurple) solid;
+        border-radius: 2px;
+    }
+
+    .link_outils > img{
+        width: 40vw;
+        display: flex;
+        margin-left: auto; 
+    }
+
+    .link_outils > p{
+        font-size: 8vw;
+    }
+
+    .LesBoutons{
+        display: none;
+    }
+
+    .input-min-max > div{
+        flex-direction: column;
+    }
+
+    .input-min-max > div > label{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .input-min-max{
+        padding-top: 20%;
+    }
+
+    .input-min-max > button {
+        width: 50%;
+        margin-left: 0%;
+    }
+
+    .pgm{
+        display: none;
+    }
+}

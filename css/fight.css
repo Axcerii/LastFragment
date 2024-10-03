@@ -1,0 +1,548 @@
+/* Bouton ajouter */
+
+:root{
+    --e-border: var(--mypurple) solid 1px;
+    --e-border-radius: 3em;
+}
+
+.ajouter_personnage{
+    display: flex;
+    width: 80%;
+    margin: auto auto;
+}
+
+.ajouter_personnage-button{
+    padding: 5em;
+    border: var(--mywhite) solid 1px;
+    background: transparent;
+    border-radius: 3em;
+    color: var(--mywhite);
+    font-family: var(--TitleFont);
+    font-weight: bold;
+
+    transition: all ease-in-out 200ms;
+}
+
+.ajouter_personnage-button > p{
+    font-size: 5em;
+    transition: all ease-in-out 400ms;
+}
+
+.ajouter_personnage-button:hover{
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1) ;
+    border: var(--mypurple) solid 1px;
+}
+
+.ajouter_personnage-button:hover > p{
+    color: var(--mypurple);
+}
+
+.ajouter_personnage-select{
+    height: 4em;
+    color: var(--mywhite);
+    background: transparent;
+    border-radius: 2em;
+
+    margin: auto auto auto 3em;
+    border: none;
+}
+
+.ajouter_personnage-select > optgroup{
+    color: black;
+    background-color: none;
+}
+
+.ajouter_personnage-select > optgroup > option{
+    color: var(--mypurple);
+    background-color: none;
+}
+
+/* Cartes */
+
+.cartes_personnage{
+    display: grid;
+    width: 90%;
+    margin-top: 5em;
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartes_personnage-carte{
+    position: relative;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    border: var(--e-border);
+    border-radius: var(--e-border-radius);
+    padding: 1em;
+    margin-top: 1em;
+
+    color: var(--mywhite);
+    font-family: var(--TitleFont);
+}
+
+.cartes_personnage-carte-stat{
+    display: flex;
+    height: 20%;
+}
+
+.cartes_personnage-carte-stat > p{
+    font-size: 1em;
+    margin : auto;
+    width: 30%;
+
+}
+
+.cartes_personnage-carte-stat > input{
+    height: 1em;
+    font-size: 1em;
+    width: 23%;
+    margin: auto auto;
+    border: none;
+    background: transparent;
+    color: var(--mypurple);
+}
+
+.cartes_personnage-carte-column{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 1em;
+    margin: 0.5em;
+
+    border-radius: var(--e-border-radius);
+}
+
+.cartes_personnage-carte-img{
+    width: 60%;
+    margin: auto auto auto 20%;
+    border-radius: 100%;
+    border: var(--mypurple) 2px solid;
+}
+
+.cartes_personnage-legend{
+    position: absolute;
+    top: -7%;
+    left: 10%;
+
+    font-size: 2.5em;
+    background: var(--myblue);
+    color: var(--mywhite);
+    text-align: center;
+    border: none;
+    
+    width: 6em;
+}
+
+.stats-1{
+    flex-direction: column;
+}
+
+.stats-1 > div{
+    display: flex;
+}
+
+.stats-1 > div >input{
+    height: 1em;
+    font-size: 1em;
+    width: 23%;
+    margin: auto auto;
+    border: none;
+    background: transparent;
+    color: var(--mypurple);
+}
+
+.stats-1 > div > p{
+    font-size: 1em;
+    margin-right: 1em;
+    width: 30%;
+}
+
+.cartes_personnage-carte-stat-buttons{
+    width: 100%;
+    margin: auto;
+}
+
+.cartes_personnage-carte-stat-buttons > button{
+    width: 25%;
+    background: transparent;
+    border: var(--e-border);
+    color: var(--mywhite);
+
+    transition: all ease-in-out 200ms;
+}
+
+.cartes_personnage-carte-stat-buttons > button:first-child{
+    border-radius: 1em 0 0 1em;
+}
+
+.cartes_personnage-carte-stat-buttons > button:last-child{
+    border-radius: 0 1em 1em 0;
+}
+
+.cartes_personnage-carte-stat-buttons > button:hover{
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+    color: var(--mypurple);
+}
+
+.cartes_personnage-carte-stat-buttons-apply{
+    border-radius: 1em!important;
+}
+
+.column-1{
+    background: rgba(255, 255, 255, 0.1);
+}
+.column-2{
+    background: rgba(170, 34, 34, 0.1);
+}
+.column-3{
+    background: rgba(35, 33, 175, 0.1);
+}
+
+.row{
+    display: flex;
+    width: 100%;
+}
+
+.bonus-stats{
+    color: var(--smoothflux)!important;
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.hidden-card{
+    display: none;
+  }
+
+  .display-card{
+    display: block;
+  }
+
+/* Armure */
+
+.armure{
+    width: 70%;
+    margin: auto;
+}
+
+.armure > select{
+    background-color: transparent;
+    color: var(--mypurple);
+    border: none;
+    border-radius: var(--e-border-radius);
+    width: 23%;
+    margin-left: 2%;
+}
+
+.armure > select > option{
+    color: var(--mypurple);
+    background-color: var(--myblue);
+    background: var(--myblue);
+}
+
+.bonus-armure{
+    color: var(--mywhite)!important;
+    font-weight: bold;
+}
+
+.ajouter_personnage-div-image{
+    display: none;
+    margin: auto auto;
+    width: 15%;
+}
+
+.ajouter_personnage-div-image > img{
+    border: var(--mypurple) solid 3px;
+    border-radius: 100%;
+    width: 100%;
+}
+
+/* Modal Attaque */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-contenu {
+    background-color: #1b1b1b;
+    width: 40%;
+    height: 80%;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+
+    border: var(--e-border);
+    border-radius: var(--e-border-radius);
+
+    color: var(--mywhite);
+
+    font-family: var(--TitleFont);
+  }
+  
+  .fermer-modal {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    font-size: 2em;
+
+    background: transparent;
+    border: var(--e-border);
+    border-radius: 5px;
+
+    color: var(--mypurple);
+  }
+
+  .modal_attaque_joueur{
+    width: 95%;
+    display: flex;
+  }
+
+  .modal_attaque_joueur_colonne{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+  }
+  
+  .div-role{
+    display: flex;
+    width: 90%;
+  }
+
+  .div-role > label{
+    width: 40%;
+  }
+
+  .div-role > select{
+    width: 50%;
+  }
+
+  .modal_select{
+    width: 50%;
+    margin-left: 1em;
+  }
+
+  .radio-select{
+    width: 90%;
+    display: flex;
+    margin: 2em auto 2em auto;
+  }
+
+  .radio_attaque{
+
+    position: relative;
+    border: 3px solid var(--mypurple);
+    padding: 1em;
+
+    text-align: center;
+    cursor: pointer;
+
+    transition: all 400ms;
+    z-index: 2;
+  }
+
+  .radio_attaque > input{
+    appearance: none; /* Supprime l'apparence par défaut */
+    -webkit-appearance: none; /* Pour certains navigateurs WebKit (comme Chrome) */
+    -moz-appearance: none; /* Pour certains navigateurs Mozilla (comme Firefox) */
+    z-index: 2;
+  }
+
+  .green-screen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 200ms ease-in-out;
+    background: var(--mypurple);
+
+    opacity: 0;
+    z-index: 0;
+    }
+
+    .radio_attaque:hover > .green-screen{
+        opacity: 0.2;
+    }
+
+    .radio_attaque > input:checked ~ .green-screen{
+        opacity: 0.5;
+    } 
+
+    .radio_attaque > input:checked{
+        color: #1b1b1b;
+    }
+
+    .div-stat{
+        margin-top: 2em;
+        width: 80%;
+        display: flex;
+    }
+
+    .div-stat>input{
+        color: var(--mypurple);
+        background: transparent;
+        border: var(--e-border);
+        width: 35%;
+        margin: auto 5% auto auto;
+        height: 1em;
+    }
+
+    .bonus{
+        color: var(--smoothflux)!important;
+    }
+
+    .div-stat > p{
+        width: 30%;
+    }
+
+    .bouton-classique{
+        background: none;
+        border: var(--e-border);
+        border-radius: var(--e-border-radius);
+        color: var(--mypurple);
+        padding: 1em;
+        margin-top: 10%;
+        font-size: 1em;
+        width: 30%;
+        transition: all ease-in-out 200ms;
+    }
+
+    .bouton-classique:hover{
+        padding: 1.1em;
+        border-color: var(--mywhite);
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.2);
+        color: var(--mywhite);
+    }
+
+    .roll-button{
+        background: transparent;
+        border: none;
+        color: var(--mywhite);
+        transition: all ease-in-out 200ms;
+        width: 30%;
+        font-size: 1em;
+        margin: 1em auto;
+    }
+
+    .roll-button:hover{
+        color: var(--mypurple);
+        cursor: pointer;
+    }
+    
+    /* Menu de droite */
+
+  .golden_svg_filter{
+    filter: invert(49%) sepia(37%) saturate(615%) hue-rotate(5deg) brightness(95%) contrast(90%);
+  }
+
+  .droite_menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    top: 25%;
+    right: 0;
+
+
+    width: 10%;
+    height: 50%;
+
+    border: var(--e-border);
+    border-radius: var(--e-border-radius) 0 0 var(--e-border-radius);
+    border-right: none;
+    background: rgba(0, 0, 0, 0.2);
+    
+  }
+
+  .droite_menu_button{
+    width: 100%;
+    background: transparent;
+    border: none;
+    margin: auto auto;
+  }
+
+  .droite_menu_svg{
+    width: 60%;
+
+    transition: 200ms ease-in-out all;
+  }
+
+  .droite_menu_button:hover{
+    cursor: pointer;
+  }
+
+  .droite_menu_button:hover > .droite_menu_svg{
+    filter: invert(49%) sepia(77%) saturate(615%) hue-rotate(5deg) brightness(95%) contrast(90%);
+  }
+
+
+  /* Modal 2 */
+
+  #modal-2 > .modal-contenu{
+    height: 40%;
+  }
+
+  /* OBS Window */
+
+  .obs-window{
+    display: none;
+    flex-direction: column;
+
+    width: 20%;
+    height: 20vw;
+    position: fixed;
+    background: var(--myblue);
+    border: var(--e-border);
+    left: 0;
+    top: 1px;
+    z-index: 1000;
+    padding: 1em;
+    font-family: var(--TitleFont);
+    color: var(--mywhite);
+
+    overflow-y: scroll;
+  }
+
+  .obs-window > p{
+    margin-bottom: -16px ;
+    font-size: 1.2em;
+  }
+
+  .obs-window > p:nth-child(even){
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .options{
+    display: flex;
+    flex-direction: column;
+    margin: auto 1em;
+  }
+
+  .cacher_statistiques{
+    display: flex;
+    color: var(--mywhite);
+    font-family: var(--TitleFont);
+    margin-left: 2em;
+  }
+
+  .cacher_statistiques:hover{
+    cursor: pointer;
+  }

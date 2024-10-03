@@ -1,0 +1,4 @@
+Tenue d'apparat très distinguée. Cette dernière est magnifique mais très peu pratique en combat. <br>
+Augmente la charisme de 15 points et baisse la précision et la vitesse de 25. 
+<br>
+Se détruit à la fin d'un combat.

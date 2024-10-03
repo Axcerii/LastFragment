@@ -1,0 +1,1 @@
+Augmente la force de 10 lors d'une attaque utilisant cette arme. En supplément ignore la défense de l'adversaire à hauteur de 5 DEF.

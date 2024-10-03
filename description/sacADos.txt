@@ -1,0 +1,1 @@
+Se porte à la place d'un torse, double le nombre d'emplacements maximums.

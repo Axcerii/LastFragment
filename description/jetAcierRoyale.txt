@@ -1,0 +1,2 @@
+Arme de jet assez faible. Inflige un dés de 20 multiplié par 5. <br>
+Permet de couper le saucisson.

@@ -1,0 +1,2 @@
+Arme étrange qui permet de tirer des projectiles avec un certain type de flux. Possède du recul qui varie en fonction de la puissance de flux exercée. <br>
+Nécessite de la précision. 

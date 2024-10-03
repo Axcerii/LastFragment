@@ -1,0 +1,1 @@
+Un objet pratique pour compter les choses.

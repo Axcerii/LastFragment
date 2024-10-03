@@ -1,0 +1,5 @@
+Arme Anti-Dragon crée par Artrish dans le but de vaincre Yinva. <br>
+Si pendant un tour complet un adversaire ne s'est pas éloigné de toi, tu voles sont flux. Lorsque tu voles le flux ta vitesse est de 0. <br>
+L'arme inflige des dégats en fonction de la maîtrise de la personne à qui tu as volé les flux. De plus tu acquiers les passifs liées aux flux volé. <br><br>
+
+<p style='font-style = italic;'> Une lanterne, teintée de bleu et de mystère, permettrait de faire jeu égal avec le Dragon de l'Invocation</p> 

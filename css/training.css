@@ -1,0 +1,46 @@
+#img-pa{
+    display: flex;
+    margin: 2em auto;
+
+    width: 10vw;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.button-jeu{
+    display: flex;
+    flex-direction: row;
+    background: var(--myblue);
+    border: solid 4px var(--mypurple);
+    border-radius: 4px;
+    color: var(--mywhite);
+    font-family: var(--TitleFont);
+    font-size: 2em;
+
+    width: 45%;
+    margin: 1em auto 0px auto;
+
+    transition: all 400ms ease;
+}
+
+.button-jeu:hover{
+    background: var(--mypurpledark);
+    cursor: pointer;
+}
+
+.button-jeu > img{
+    display: flex;
+    width: 3.5vw;
+    margin: auto 3em auto auto;
+}
+
+.button-jeu > p{
+    margin-left: 1em;
+}
+
+.button-solo{
+    margin: 1em auto 0px 2.5%;
+}

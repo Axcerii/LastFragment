@@ -1,0 +1,1 @@
+Arme de tir instantané avec recharge longue. Utilise la précision pour lancer un carreau sur l'adversaire, l'arme inflige un dès de 20 multiplier par 10 en ignorant la défense. <br> <p style='color=lightblue !important;'>La lunette de visée augmente la précision de 10 points.</p>

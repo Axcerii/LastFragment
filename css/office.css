@@ -1,0 +1,143 @@
+button{
+    background: var(--mypurple);
+    border: solid var(--myblack) 2px;
+    color: var(--mywhite);
+    font-size: 1em;
+    width: 10%;
+    margin-left: 2em;
+}
+
+.update{
+    width: 100%;
+    margin: auto auto;
+}
+
+.delete{
+    width: 100%;
+    margin : auto auto;
+}
+
+.add{
+    margin-top : 2em;
+}
+
+td{
+    color: var(--mywhite);
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto auto;
+}
+
+.envoyer{
+    margin-top: 2em;
+}
+
+label{
+    color: var(--mywhite);
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.text{
+    background: var(--myblue);
+    color: var(--mywhite);
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 2px var(--mypurple);
+}
+
+.desc{
+    width: 50%;
+    height: 500px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.argent_nom{
+    color: var(--mywhite);
+    width: 50%;
+}
+
+#dataTable{
+    color: var(--myblack);
+    border: 6px solid var(--mypurple);
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+tr{
+    border: 4px solid var(--mypurple);
+    border-right: none;
+    border-left: none;
+}
+
+tr:nth-child(even){
+    background-color: rgba(255, 255, 255, 0.152);
+}
+
+td{
+    border: 1px solid var(--mypurple);
+    border-bottom: none;
+    border-top: none;
+}
+
+th{
+    color: var(--mywhite);
+}
+
+.first-tr{
+    font-weight: bold;
+    font-family: var(--TitleFont);
+}
+
+button{
+    cursor: pointer;
+}
+
+.Marché{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Marché > form{
+    width: 40%;
+    margin: 5%;
+    border: solid 2px var(--mypurple);
+    padding: 5%;
+}
+
+
+.market-button{
+    margin-top: 2em;
+    width: 30%;
+}
+
+.state > div > select{
+    margin-bottom: 6em;
+}
+
+.state-checkbox{
+    margin-bottom: 2em;
+}
+
+#tableau_objets{
+    width: 80%;
+    height: 25em;
+    padding: 1em;
+    display: flex;
+    margin: auto auto;
+
+    border: solid  1px var(--mypurple);
+
+    overflow-y: scroll;
+}
+
+#ux_tableau_objets{
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 2em;
+}

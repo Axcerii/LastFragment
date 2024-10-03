@@ -1,0 +1,85 @@
+:root{
+    --mypurple : floralwhite!important;
+    --personnal: #051236;
+    --personnal2: #000000;
+    --TitleFont: "Allura"!important;
+    --smoothflux: #45aeb4;
+    --darkflux: #2d696c;
+    --altcolor: #f6f868;
+    --darkaltcolor: #b5b774;
+}
+
+
+.background-pattern{
+    display: none;
+}
+
+.background-pattern-radial{
+    display: none;
+}
+
+h1{
+    font-size: 2.75em!important;
+}
+
+.titre_stat{
+    font-size: 1.5em!important;
+}
+
+.titre_stat1{
+    font-size: 1.5em!important;
+}
+
+html{
+    background: linear-gradient(var(--personnal), var(--personnal2))!important;
+    overflow-y: hidden;
+}
+
+.header{
+    background-image: url('../../Image/Background/Shuri.jpg')!important;
+    background-size: cover;
+    background-position-y: 380px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: solid 2px var(--personnal);
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #88d3ff!important;
+    border-radius: 5px;
+  }
+
+
+::-webkit-scrollbar-track {
+    background: #02001c!important;
+    }
+
+.s-base{
+    background-image: url('../../Image/Background/Flamme.gif');
+    background-position: center; 
+    border: solid var(--mypurple) 2px; 
+}
+
+.s-combat{
+    background-image: url('../../Image/Background/Flamme.gif');
+    background-position: center; 
+    border: solid var(--mypurple) 2px; 
+    
+}
+
+.personnage_img{
+    border: none!important;
+}
+
+.Link{
+    font-size: 1.2em!important;
+}
+
+.equip{
+    background: #02001c; 
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-slider {
+    background-color: var(--smoothflux);
+  }

@@ -1,0 +1,49 @@
+
+.tbody-infos{
+    text-align: center;
+}
+
+.description{
+    text-align: justify;
+}
+
+.infos{
+    position: relative;
+    margin-right: 4em;
+}
+
+.personnage_img{
+    border: none;
+}
+
+.Descendance-Logo{
+    position: absolute;
+    z-index: -1;
+/*     filter: invert(98%) sepia(97%) saturate(818%) hue-rotate(49deg) brightness(105%) contrast(101%);
+ */    
+     filter: invert(56%) sepia(17%) saturate(1415%) hue-rotate(5deg) brightness(88%) contrast(83%);
+    opacity: 0.2;
+}
+
+#Race{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.taille-poids{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.taille-poids > p{
+    text-align: center;
+    width: 50%;
+}
+@media screen and (max-width: 500px) {
+
+    .infos{
+        margin: auto;
+    }
+}

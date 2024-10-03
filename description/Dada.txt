@@ -1,0 +1,1 @@
+La création de Dada ne consomme pas de flux. Cependant il faut quand même du flux pour le faire. (100 QdF requis)

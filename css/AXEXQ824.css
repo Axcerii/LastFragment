@@ -1,0 +1,60 @@
+.enter-a-code{
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+    & p{
+        color: var(--mywhite);
+        font-family: 'Rubik Mono One';
+        font-size: 3em;
+    }
+    
+    & input{
+        font-family: 'yarndings 12';
+        font-size: 3em;
+    }
+
+    & button{
+        color: var(--mywhite);
+        width: 40%;
+        font-size: 2.5em;
+        margin-top: 0.5em;
+        border-radius: 0.25em;
+        border: 2px solid var(--mywhite);
+        background: transparent;
+        transition: all ease-in-out 300ms;
+        
+        &:hover{
+            background: var(--mypurple);
+            cursor: pointer;
+        }
+    }
+
+    transition: all ease-in-out 3000ms;
+}
+
+#cmd {
+    white-space: pre-wrap; /* pour conserver les sauts de ligne */
+    font-family: monospace;
+    padding: 2em;
+    color: var(--mywhite);
+    height: 30em;
+    border: solid white 2px;
+    overflow-y: scroll;
+    background-color: black;
+}
+
+#error{
+    color: red;
+    font-family: monospace;
+    font-size: 2em;
+    margin-top: 3em;
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    .enter-a-code{
+        width: 90%;
+    }
+}

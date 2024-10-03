@@ -1,0 +1,1 @@
+Arme en bois permettant d'utilisé des flèches. Les dégâts sont proportionnels à la force de l'utilisateur.

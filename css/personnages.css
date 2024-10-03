@@ -1,0 +1,404 @@
+html{
+    overflow-y: hidden;
+}
+
+
+h1{
+    color: var(--mywhite);
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.8em;
+}
+
+
+.mainZoneCard{
+    /*box-shadow: 10px 5px 5px var(--myblack) ;*/
+
+    margin: 12px auto 0px 4%;
+
+    width: 77.5%;
+    height: 65vh;
+
+    overflow-y: scroll;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1em;
+/*     border-top: var(--myblack) 1px solid;
+    border-left: var(--myblack) 1px solid; */
+    overflow-x: hidden;
+    padding-right: 5px;
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    /*border: solid var(--mypurple) 2px;*/
+    flex: 1 0 20%;
+    background: var(--myblue);
+    max-height: 100%;
+    transition: 1000ms all ease-out;
+    background: transparent;
+
+    z-index: 501;
+    max-width: 512px;
+}
+
+.card button >p{
+    position: absolute;
+    color: var(--mywhite);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    left: 50%;
+    top: 80%;
+    z-index: 500;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 500ms all ease-out;
+    font-family: var(--TitleFont);
+}
+
+.card img{
+    width: 100%;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.blackscreen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    z-index: 499;
+    transition: 500ms all ease-out;
+/*     border: 2px solid var(--mypurple); */
+    box-sizing: border-box;
+
+    --borderSize: 4px;
+
+    border: var(--borderSize) solid;
+    -webkit-mask: 
+      conic-gradient(from 180deg at top var(--borderSize) right var(--borderSize), #0000 90deg,var(--mypurpledark) 0)
+       var(--_i,200%) 0  /200% var(--_i,var(--borderSize)) border-box no-repeat,
+      conic-gradient(at bottom var(--borderSize) left  var(--borderSize),  #0000 90deg, var(--mypurpledark) 0)
+       0   var(--_i,200%)/var(--_i,var(--borderSize)) 200% border-box no-repeat,
+      linear-gradient(var(--mypurpledark) 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+}
+
+button:hover > .blackscreen{
+    opacity: 1;
+    --_i: 100%;
+    color: var(--mypurple);
+    transition: .3s, -webkit-mask-size .3s .3s;
+}
+
+button:hover > p{
+    opacity: 1;
+}
+
+
+.ethnie{
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    margin-top: 2em;
+    filter: invert(80%) sepia(45%) saturate(784%) hue-rotate(349deg) brightness(92%) contrast(97%);
+    z-index: 500;
+    opacity: 0;
+    transition: 500ms all ease-out;
+}
+
+button:hover > .ethnie{
+    opacity: 0.5;
+}
+
+.card button{
+    display: flex;
+    margin: auto auto;
+    background: none;
+    border : none;
+    padding: 0;
+    cursor: pointer;
+    box-sizing: border-box;    
+}
+
+#search_bar{
+    display: flex;
+    width: 70%;
+    background: var(--mypurple);
+    color: var(--mywhite);
+    font-family: Arial, Helvetica, sans-serif;
+    border: var(--myblue) solid 2px;
+    height: 2em;
+    border-radius: 0.5em;
+}
+
+#search_bar::placeholder{
+    color: var(--myblack);
+    opacity: 0.4;
+}
+
+.mobile-name{
+    display: none;
+}
+
+.partie-superieur{
+    display: flex;
+    width: 66.6%;
+
+    margin: auto auto;
+}
+
+
+.info-option{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+}
+
+.label-categorie{
+    display: flex;
+    width: 50%;
+    border: 2px solid var(--mypurple);
+    background: rgba(0,0,0,0.6);
+    margin-left: 10%;
+    padding: 0.5em;
+}
+
+.categorie{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    max-height: max-content;
+}
+
+.label-categorie:hover{
+    cursor: pointer;
+}
+
+.radio-bouton{
+    -webkit-appearance: none;
+    -moz-appearance: none;   
+    appearance: none;
+    display: none;
+}
+
+.bestiaire-img{
+    display: flex;
+    margin: auto auto;
+    width: 60%;
+    filter: invert(91%) sepia(65%) saturate(0%) hue-rotate(15deg) brightness(107%) contrast(103%);
+    transition: all ease-in-out 300ms;
+}
+
+.radio-personnages-img{
+    display: flex;
+    margin: auto auto;
+    width: 40%;
+    filter: invert(91%) sepia(65%) saturate(0%) hue-rotate(15deg) brightness(107%) contrast(103%);
+    transition: all ease-in-out 300ms;
+}
+
+.quest-checkbox ~ img{
+    filter: invert(100%);
+    transition: all ease-in-out 200ms;
+}
+
+.quest-checkbox ~ img:hover{
+    cursor: help;
+}
+
+.label-categorie:hover > img{
+    filter: invert(49%) sepia(40%) saturate(584%) hue-rotate(5deg) brightness(97%) contrast(89%);
+}
+
+.radio-bouton:checked ~ img{
+    filter: invert(92%) sepia(10%) saturate(1332%) hue-rotate(58deg) brightness(101%) contrast(102%);
+}
+
+.quest-checkbox:checked ~ img{
+    filter: invert(92%) sepia(10%) saturate(1332%) hue-rotate(58deg) brightness(101%) contrast(102%);
+}
+
+.arc-tooltip{
+    position: absolute;
+    visibility: hidden;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 100;
+    color: var(--mywhite);
+    padding: 1em;
+    border-radius: 1em;
+    left: 90%;
+    font-family: var(--TitleFont);
+}
+
+#arc-label:hover ~ .arc-tooltip{
+    visibility: visible;
+}
+
+.mortLogo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    filter: invert(12%) sepia(33%) saturate(7486%) hue-rotate(357deg) brightness(101%) contrast(124%);
+}
+
+.mortAssombrir{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.5);
+}
+
+/* Descendance rangement */
+
+.mainZone{
+    width: 100%;
+    display: flex;
+    margin: auto auto;
+}
+
+.descendance{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2em;
+    row-gap: 1em;
+
+    width: 9%;
+    padding: 2em;
+}
+
+.cards{
+    width: 91%;
+}
+
+.label-descendance{
+    width: 100%;
+    height: auto;
+    border: solid 2px var(--mypurple);
+    cursor: pointer;
+    background: rgba(0,0,0,0.6);
+    padding: 0.5em;
+}
+
+/* Checkbox invisible */
+
+.label-descendance > input{
+    display: none;
+}
+
+/* Image des labels en SVG */
+
+.label-descendance > img{
+    display: flex;
+    margin: auto auto;
+    width: 100%;
+    filter: invert(91%) sepia(65%) saturate(0%) hue-rotate(15deg) brightness(107%) contrast(103%);
+
+    transition: all 300ms ease-in-out;
+}
+
+.label-descendance:hover > img{
+    filter: invert(49%) sepia(40%) saturate(584%) hue-rotate(5deg) brightness(97%) contrast(89%);
+}
+
+.label-descendance > input:checked + img{
+    filter: invert(93%) sepia(7%) saturate(1873%) hue-rotate(58deg) brightness(100%) contrast(104%);
+}
+
+.group_3{
+    border: 4px solid rgb(76, 146, 99);
+    box-sizing: border-box;
+}
+
+.group_4{
+    border: 4px solid rgb(59, 69, 158);
+    box-sizing: border-box;
+}
+
+.group_5{
+    border: 4px solid rgb(150, 59, 158);
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px) {
+    html{
+        overflow-y: auto;
+    }
+
+    h1{
+        display: none;
+    }
+
+    #search_bar{
+        width: 70%;
+    }
+
+    .card{
+        width: 40%;
+        margin: 12px 5% 5% 5%;
+        flex: 1 0 30%;
+    }
+    .card img{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .mainZoneCard{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 12px auto 0px auto;
+        width: 66.6%;
+    }
+
+    .blackscreen{
+        display: none;
+    }
+
+    .ethnie{
+        display: none;
+    }
+
+    .Name{
+        display: none;
+    }
+    .mobile-name{
+        display: block;
+        color: var(--mywhite);
+        font-family: var(--TitleFont);
+        text-align: center;
+    }
+
+    .partie-superieur{
+        flex-direction: column;
+    }
+
+    .info-option{
+        width: 100%;
+    }
+
+    .categorie{
+        width: 100%;
+    }
+
+    .label-categorie{
+        margin-left: 0;
+        margin-right: 10%;
+    }
+
+    .descendance{
+        display: none;
+    }
+}

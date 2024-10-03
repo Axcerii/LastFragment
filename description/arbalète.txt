@@ -1,0 +1,1 @@
+Arme utilisant des carreaux, infligeant des dégâts ignorant la défense si celui-ci touche. 100+(cap20*10).

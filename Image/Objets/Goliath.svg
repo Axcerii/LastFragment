@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke-width: 10px;
+      }
+
+      .cls-2 {
+        stroke-width: 20px;
+      }
+    </style>
+  </defs>
+  <g id="Goliath">
+    <polygon class="cls-1" points="622.26 202 373.74 202 198 377.74 198 626.26 373.74 802 622.26 802 798 626.26 798 377.74 622.26 202"/>
+    <polygon class="cls-2" points="575.9 313.93 420.1 313.93 309.93 424.1 309.93 579.9 420.1 690.07 575.9 690.07 686.07 579.9 686.07 424.1 575.9 313.93"/>
+    <rect class="cls-2" x="239.39" y="242.39" width="519.22" height="519.22"/>
+  </g>
+</svg>

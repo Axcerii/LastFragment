@@ -1,0 +1,2 @@
+Arme augmentant la puissance du flux rewrite. Permet de réécrire l'histoire comme bon lui semble. La monde aurait été créé à l'aide de cet objet. <br>
+Nécessite une quantité de flux de 65536 pour être utilisée.

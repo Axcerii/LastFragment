@@ -1,0 +1,1 @@
+Augmente la force de 10 lors d'une attaque utilisant cette arme. L'arme est conductrice de flux. Cette arme est <span style='font-weight: bold; color: #F5E96D'>enchantée</span> d'un Croc d'Engeance Canine. Cette arme possède une aura sombre et brille lorsqu'elle se gorge de flux.

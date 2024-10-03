@@ -1,0 +1,193 @@
+.bag-list{
+    color: var(--mywhite);
+    font-size: 1.2em;
+    border: solid 2px var(--mypurple);
+    padding: 1em 2em 2em 2em;
+}
+
+.bag-list > li{
+    margin-top: 0.5em;
+}
+
+.bag-title{
+    font-size: 1.5em;
+    color: var(--mywhite);
+    font-family: var(--TitleFont);
+}
+
+.bags{
+    width: 20%;
+    margin-left: 5%;
+}
+
+.bag-count{
+    list-style: none;
+    text-align: right;
+    color: var(--mypurple);
+    font-weight: bold;
+}
+
+.Marketplace{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.aliments{
+    width: 33%;
+    color: var(--mywhite);
+    border: solid 2px var(--mypurple);
+    background-color: rgba(0,0,0,0.6);
+    font-family: var(--TitleFont);
+}
+
+.aliments-ligne{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 2.5%;
+}
+
+.aliments-ligne *{
+    width: 25%;
+}
+
+.aliments-form{
+    width: 50%;
+    display: flex;
+}
+
+.aliments-form *{
+    width: 50%;
+}
+
+.total-places{
+    list-style: none;
+    text-align: right;
+    color: var(--mypurple);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 1em;
+}
+
+#valid-button{
+    height: 2em;
+    width: 25%;
+    margin-right: 2em;
+}
+
+.valid-div{
+    width: 100%;
+}
+
+.valid-div > form{
+    width: 100%;
+    display: flex;
+}
+
+.quantite-input{
+    background-color: transparent;
+    color: var(--mypurple);
+    border: none;
+    font-family: var(--TitleFont);
+}
+
+.aliments-scroll{
+    overflow-y: scroll;
+    height: 75vh;
+}
+
+.aliments-button{
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 50%;
+    margin: auto auto;
+    border: 1px solid var(--mypurple);
+    cursor : pointer;
+    border-radius: 1em;
+    color: var(--mypurple);
+}
+
+.aliments-ligne:nth-child(even){
+    background-color: rgba(var(--mypurpledark2), 0.6);
+}
+
+.aliments-first-line{
+    border-bottom: 2px solid var(--mypurple);
+}
+
+#aliments-search{
+    height: 50%;
+    margin: auto auto;
+}
+
+.panier{
+    width: 30%;
+    border: solid 2px var(--mypurple);
+    color: var(--mywhite);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.panier-first-line{
+    border-bottom: 2px solid var(--mypurple);
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 2em auto auto auto;
+}
+
+.panier-last-line *{
+    width: 50%;
+}
+
+.panier-last-line{
+    border-top: 2px solid var(--mypurple);
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 2em auto auto auto;
+    padding: 0 7.5%;
+}
+
+.panier-first-line *{
+    width: 25%;
+}
+
+.panier > h2{
+    color: var(--mywhite);
+    text-align: center;
+    font-family: var(--TitleFont);
+    font-weight: normal;
+    font-size: 1.7em;
+}
+
+.panier-scroll{
+    overflow-y: scroll;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto auto;
+}
+
+.panier-scroll *{
+    width: 95%;
+}
+
+.hidden{
+    display: none!important;
+}
+
+@media screen and (max-width: 500px) {
+.bags{
+    width: 90%;
+}
+
+.Marketplace{
+    flex-direction: column;
+}
+}
